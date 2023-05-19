@@ -1,5 +1,5 @@
 import { CloseIcon, HamburgerIcon, SearchIcon } from '@chakra-ui/icons';
-// import { Box, Button, Flex, Image, Input, Text } from '@chakra-ui/react'
+
 import { Box, Flex, Image, Input, Text } from '@chakra-ui/react'
 import React, { useRef, useState } from 'react'
 // import Navbar from '../Component/Navbar'
