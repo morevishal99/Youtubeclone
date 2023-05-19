@@ -5,7 +5,7 @@ import { Loader } from './Loader';
 
 const Homepage = () => {
     // const key = "AIzaSyAtHEZ7b7sanhEJOvGO6cCXBhsFsjBIKpI"
-    const key=process.env.KEY
+    const key = process.env.KEY
     const [query, setquery] = useState();
     const [data, setdata] = useState([]);
     const [sidebar, setsidebar] = useState(false);
@@ -68,7 +68,6 @@ const Homepage = () => {
                     {/* input tag */}
                     <Flex width={"40%"} border="1px solid grey" justifyContent={"space-between"} borderRadius="10px" padding={"10px"}>
                         <Input ref={ref} value={query} width={"50%"} variant='unstyled' type="text" onInput={(e) => setquery(e.target.value)} placeholder="Search" />
-                        {/* <Button onClick={() => getData()}> <SearchIcon/></Button> */}
                         <Flex gap={"20px"}>
                             {query ?
                                 <CloseIcon color={"grey"} margin="6px" onClick={() => focus()} /> : ""
@@ -91,7 +90,7 @@ const Homepage = () => {
                             <Image padding={"5px"} width={"30px"} marginLeft="auto" marginRight={"auto"} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAflBMVEX///8AAAD7+/tXV1f39/cvLy8fHx+3t7eXl5dTU1NPT09LS0tvb28ICAjm5ubf3982NjaLi4sVFRXFxcVGRka/v7/V1dVcXFysrKzy8vJ5eXk6Ojrs7OxoaGgnJycgICCCgoKSkpKlpaXY2Nhra2ufn59BQUE5OTnNzc0XFxczMGtBAAAEKklEQVR4nO3dfV+qMBTA8YEYVqKJT6CiZlne9/8GL+S1y9PG5s7YmZ/z+zOn9g1LmxsyRlEURVEURVEURVEURVEURVEUpdtlM3juoSzxjTLSZ6+v9iuDjmDbm8Pz4g9zkFmPDs9bmIMceoV4U1OOtF+HdzIFmfYMOROEIAQhCBhk7Jsp6R1i6D5CgihEEIUIohJBFCKISgRRyADEPy8OT9VKdxI9mSku3UdcveiwPe7ucEyGHr7ipbIjwOjIHwjKs139zvzIpzxHhPOA5E0UIba/X26KvyW+7e+XW0gQZHVC/HC9PyxGvuOQ6fHf0/Zw4jDET17/DxwGdUg0tN2TFGS6+VMhz+qQl65HpfFG3ZAgWdSP3bD4umOQj3FcZ+SPpOISlyDBifOOYHGhO5BV28FwDpKe33gKlyCXLBIwXIGko84X6MUw7JD5Wnww3IDs3uX+WyquihiylDkYDkC4f2x/2pdfzRRXxQsRFK2XrPSq0VXI8L2Y9XIdEmXz61C3IW+j9DbUYUiUXUpDASB+8jkYK04NSCaAbM9pZag+5LK/HmUTFB4kHjdmULUhq99nKQOUdsjXKWgO1YaU/7cBp7RA4k37kkddyKp6N8CUBmTBXU2rCznV7wqUUoU8bQSLHXUhLQcfkFK+9a9QuLTZAASQIjEddMsIBIxiHwJEwQABoeCAAFCwQLQpeCCaFEwQLYolyB6cYgkSzhtvVWhSbEEYA6bYgwBTbEJAKXYhgBTbEDCKfQgQBQMEhIIDIqJs5RbEYYEIKNGlORgzhE/Zy2wuxgThUhLnIByKzEpobBCWDpqQtXuQdNb2/t/GNUg7w/PmbkF4DLkFyWggXIa3l1qPjATCZ0TjtPXWUEJEDNnl4QggEAwEEBiGdQgUwzIEjmEVAsmwCIFlWIMkwAxrEN4Ct3sZyGbj72eggugwEEH0GGggugwkEH0GCggEAwEEhmEdAsXoFXI2yKhChIuc9CHlU/5AMxrHm7/sTB+yM8hoeeDyFgICrGnMzDHafwNbl2YCQNLbZid4Bu9vYstiWYh1v2lmiiF4uv0+1+eTIJaU75JRKDdPpZrgBVB1QbnTa+O94aj043MZUuyA+Z0Kdxvi3bbBPADkujHpISB5+9nEHci3ePNe+dLiqnghoex2SvQQ1r3b2BlIseVYtP/bIUje5bPrsBSjHIAwFpzFZ00vxjgBYcITJbgFKU5d8fUYkLyP2pldnIUUmzlb1uvEP5eUvvAa2O69C8JKZz/6bVGH4Io/r+WHL82RLkLyJsf/n5pwXT/lKCRvObg+T459xyGM7UbZ+nib93IZUulhIEz23CO9J7PirlyfH2KjUqQ6c9bYDo2kTNHBWH+fj6TSQf2Mv0HWfbO9t73rY3tWx/UAVWP10xZTFEVRFEVRFEVRFEVRFEVRFEXJ9RdP22jdO9TLywAAAABJRU5ErkJggg==" />
                             <Text fontSize={"13px"}>Home</Text>
                         </Box>
-                       
+
                     </Flex>
                 </Box>
                 {/* box with category */}
