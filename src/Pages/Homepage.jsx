@@ -16,7 +16,7 @@ const Homepage = () => {
         ref.current.focus();
     }
     const getData = async () => {
-        // let query = document.getElementById("query").value;
+
 
         // setdata([])
         try {
@@ -36,7 +36,7 @@ const Homepage = () => {
         }
 
 
-        // appenddata(youtube)
+
     }
     const searchfunction = (value) => {
         alert(value)
@@ -45,7 +45,7 @@ const Homepage = () => {
     }
     const handleSidebar = () => {
         setsidebar(!sidebar)
-        // alert(sidebar)
+
     }
     return (
         <>
